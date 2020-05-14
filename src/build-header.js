@@ -112,7 +112,7 @@ export class CustomHeader {
       header[button] = document.createElement('ha-icon-button');
       this.tapOrClick(
         header[button],
-        this.ha_elem[button].shadowRoot.querySelector('ha-icon-button') || this.ha_elem[button],
+        this.ha_elem[button].shadowRoot.querySelector('ha-icon-button') || this.ha_elem[button].shadowRoot.querySelector('paper-icon-button') || this.ha_elem[button],
       );
     }
 
