@@ -101,7 +101,7 @@ export class CustomHeader {
     if (button === 'options') {
       header[button] = this.ha_elem[button].cloneNode(true);
       header[button].removeAttribute('horizontal-offset');
-      header[button].querySelector('paper-icon-button').style.height = '48px';
+      header[button].querySelector('ha-icon-button').style.height = '48px';
       const items = Array.from(header[button].querySelectorAll('paper-item'));
       items.forEach(item => {
         const index = items.indexOf(item);
@@ -109,10 +109,10 @@ export class CustomHeader {
       });
     } else {
       if (!this.ha_elem[button]) return;
-      header[button] = document.createElement('paper-icon-button');
+      header[button] = document.createElement('ha-icon-button');
       this.tapOrClick(
         header[button],
-        this.ha_elem[button].shadowRoot.querySelector('paper-icon-button') || this.ha_elem[button],
+        this.ha_elem[button].shadowRoot.querySelector('ha-icon-button') || this.ha_elem[button],
       );
     }
 
