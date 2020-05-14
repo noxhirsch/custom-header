@@ -288,7 +288,7 @@ class ChConfigEditor extends LitElement {
             margin-top: -5px;
             @apply --paper-font-headline;
           }
-          .card-header paper-icon-button {
+          .card-header ha-icon-button {
             margin-top: -5px;
             float: right;
           }
@@ -695,7 +695,7 @@ class ChExceptionEditor extends LitElement {
             margin-top: -5px;
             @apply --paper-font-headline;
           }
-          .card-header paper-icon-button {
+          .card-header ha-icon-button {
             margin-top: -5px;
             float: right;
           }
@@ -707,13 +707,13 @@ class ChExceptionEditor extends LitElement {
             ${Object.values(this.exception.conditions)
               .join(', ')
               .substring(0, 40) || 'New Exception'}
-            <paper-icon-button
+            <ha-icon-button
               icon="${this._closed ? 'mdi:chevron-down' : 'mdi:chevron-up'}"
               @click="${this._toggleCard}"
             >
-            </paper-icon-button>
-            <paper-icon-button ?hidden=${this._closed} icon="mdi:delete" @click="${this._deleteException}">
-            </paper-icon-button>
+            </ha-icon-button>
+            <ha-icon-button ?hidden=${this._closed} icon="mdi:delete" @click="${this._deleteException}">
+            </ha-icon-button>
           </div>
           <h4 class="underline">${localize('editor.conditions')}</h4>
           <ch-conditions-editor
