@@ -288,7 +288,7 @@ class ChConfigEditor extends LitElement {
             margin-top: -5px;
             @apply --paper-font-headline;
           }
-          .card-header ha-icon-button {
+          .card-header ha-icon-button, .card-header paper-icon-button {
             margin-top: -5px;
             float: right;
           }
@@ -695,7 +695,7 @@ class ChExceptionEditor extends LitElement {
             margin-top: -5px;
             @apply --paper-font-headline;
           }
-          .card-header ha-icon-button {
+          .card-header ha-icon-button, .card-header paper-icon-button {
             margin-top: -5px;
             float: right;
           }
