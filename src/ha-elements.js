@@ -19,6 +19,7 @@ export const ha_elements = () => {
   haElem.options = haElem.root.querySelector('paper-menu-button');
   haElem.voice =
     haElem.root.querySelector('ha-start-voice-button') ||
+    haElem.root.querySelector('paper-icon-button[icon="hass:microphone"]') ||
     haElem.root.querySelector('ha-icon-button[icon="hass:microphone"]');
   haElem.drawer = haElem.main.querySelector('#drawer');
   haElem.sidebar = {};
